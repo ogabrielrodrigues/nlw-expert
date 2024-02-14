@@ -59,16 +59,17 @@ export function App() {
     <div className="mx-auto max-w-6xl my-12 space-y-6 px-5">
       <img src={expert_logo} alt="Expert notes logo" />
 
-      <form className="w-full">
+      <div className="w-full">
         <input
           type="text"
           placeholder="Busque algo em suas notas..."
           className="w-full bg-transparent text-3xl font-semibold tracking-tight placeholder:text-slate-500 outline-none"
           onChange={handleSearch}
-          autoComplete="off"
           value={search}
+          autoComplete="off"
+          aria-autocomplete="none"
         />
-      </form>
+      </div>
 
       <div className="h-px bg-slate-700" />
 
